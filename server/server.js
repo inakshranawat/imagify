@@ -11,7 +11,7 @@ await connectDB()
 app.use(cors())
 app.use(express.json())
 
-const port = process.env.PORT || 4000
+const port = process.env.PORT || "https://imagiify.onrender.com"
 
 app.get('/',(req ,res)=>{
    res.send("api is working ")
